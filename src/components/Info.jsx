@@ -12,7 +12,7 @@ function Info() {
 				<p className="my-8 text-center">
                 Here is a report with an objective of making many people able to imagine at time of high potential of earthquake occurrence intuitively by using visualization of the position of the Moon and the Sun when earthquake was occurred.
 				</p>
-				<a href="https://www.kaggle.com/code/boomin/the-moon-triggers-earthquakes-on-the-earth" className="glass border-black border-2 px-4 py-2 text-black">Read More</a>
+				<a href="https://www.kaggle.com/code/boomin/the-moon-triggers-earthquakes-on-the-earth" target={"_blank"} className="glass border-black border-2 px-4 py-2 text-black" rel="noreferrer">Read More</a>
 			</div>
 		</div>
 	)
