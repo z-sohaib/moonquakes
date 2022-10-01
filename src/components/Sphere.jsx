@@ -17,28 +17,32 @@ function Sphere() {
 			x: 480,
 			y: 0,
 			z: 120,
-			type: "Deep Moonquake"
+			type: "Deep Moonquake",
+			color: "red"
 		},
 		{
 			id: 2,
 			x: 0,
 			y: 480,
 			z: 120,
-			type: "Vibration"
+			type: "Vibration",
+			color: "green"
 		},
 		{
 			id: 3,
 			x: 0,
 			y: 270,
 			z: 420,
-			type: "Thermal Quake"
+			type: "Thermal Quake",
+			color: "blue"
 		},
 		{
 			id: 4,
 			x: 455,
 			y: 160,
 			z: -120,
-			type: "Shallow Quake"
+			type: "Shallow Quake",
+			color: "yellow"
 		},
 	])
 	useFrame(() => {
@@ -62,7 +66,7 @@ function Sphere() {
 						</Html>
 						<mesh key={seism.id} onPointerOver={() => {console.log("pointer over")}} onClick={() => {console.log("clicked"); navigate("/home/info")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
 							<sphereBufferGeometry args={[20, 20, 20]} />
-							<meshStandardMaterial color={"red"} />
+							<meshStandardMaterial color={seism.color} />
 						</mesh>
 					</>
 					

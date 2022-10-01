@@ -10,7 +10,7 @@ function Home() {
 	return (
 		<div className="flex h-full justify-between gap-x-16 items-center bg-cover">
 			<div className="text-white flex flex-col justify-center items-start gap-y-8">
-				<p className="text-[60px] font-semibold text-white"><Typewriter
+				<p className="text-[60px] font-semibold text-white h-48"><Typewriter
 					options={{
 						strings: ["Visualize MoonQuakes...","Learn More about Moons..."],
 						autoStart: true,
