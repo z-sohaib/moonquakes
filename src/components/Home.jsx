@@ -11,13 +11,13 @@ function Home() {
 		<div className="flex h-full justify-between gap-x-16 items-center bg-cover">
 			<div className="text-white flex flex-col justify-center items-start gap-y-8">
 				<p className="text-[60px] font-semibold text-white"><Typewriter
-			options={{
-				strings: ["Visualize MoonQuakes...","Learn More about Moons..."],
-				autoStart: true,
-				loop: true,
-			}}
-			/>
-			</p>
+					options={{
+						strings: ["Visualize MoonQuakes...","Learn More about Moons..."],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
+				</p>
 				<p className="text-[22px] ">Did you knew that also moon can have quakes on its surface?  🤔  Get to discover that now !!</p>
 				<div className="glass flex justify-center items-center self-center py-3 px-6 gap-x-4">
 					<p className="text-[20px] font-semibold">Rotate The Moon</p>

@@ -2,14 +2,13 @@ import Typewriter from "typewriter-effect"
 
 function Welcome() {
 	return (
-		<div className="h-screen bg-mn flex justify-center items-center text-center">
-			 
+		<div className="h-screen bg-mn flex justify-center items-center text-center"> 
 			<p className="px-2 py-1 text-[70px] font-aileron drop-shadow-2xl text-white"><Typewriter
-			options={{
-				strings: ["LEARN MORE ABOUT MOONQUAKES"],
-				autoStart: true,
-				loop: true,
-			}}
+				options={{
+					strings: ["LEARN MORE ABOUT MOONQUAKES"],
+					autoStart: true,
+					loop: true,
+				}}
 			/>
 			</p>
 			<img src="/images/logo.svg" alt="spaceman" className="absolute bottom-8 right-4" />

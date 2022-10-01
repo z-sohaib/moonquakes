@@ -3,16 +3,26 @@ import Sidebar from "../components/Sidebar"
 
 function Layout() {
 	return (
-		<div className="h-screen bg-space bg-cover flex ">
-			<div className="py-8 px-12 w-44 flex h-full flex-col justify-center items-center self-center gap-y-8">
-			<img src="/images/logo.svg" alt="spaceman "  className = "w-52 h-52"  />
-				<Sidebar />
+		<>
+			<div className="sky absolute top-0 left-0 h-20 w-20">
+				<div className="star"></div>
+				<div className="star"></div>
+				<div className="star"></div>
+				<div className="star"></div>
+				<div className="star"></div>
+				<div className="star"></div>
+				<div className="star"></div>
 			</div>
-			<div className="w-full h-full overflow-y-auto">
-				<Outlet />
+			<div className="h-screen bg-space bg-cover flex">
+				<div className="py-8 px-12 w-44 flex h-screen flex-col justify-center items-center self-center gap-y-8">
+					<img src="/images/logo.svg" alt="spaceman" />
+					<Sidebar />
+				</div>
+				<div className="w-full h-full overflow-y-auto">
+					<Outlet />
+				</div>
 			</div>
-
-		</div>
+		</>
 	)
 }
 
