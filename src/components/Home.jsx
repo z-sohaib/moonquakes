@@ -28,6 +28,7 @@ function Home() {
 					<Sphere />
 				</Suspense>
 			</Canvas>
+			<img src="/images/spaceman.svg" alt="spaceman" className="absolute bottom-8 right-4" />
 		</div>
 	)
 }
