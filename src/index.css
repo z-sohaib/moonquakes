@@ -29,6 +29,17 @@
    url("./assets/fonts/Ailerons-Typeface.otf") format("truetype");
   font-weight: bold;
   }
-  .font-aileron {
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+     url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+    body {
+      font-family: "Inter";
+    }
+    .font-aileron {
     font-family: "Ailerons";
-  }
+    }
+
