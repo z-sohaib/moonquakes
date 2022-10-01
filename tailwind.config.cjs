@@ -9,7 +9,8 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				"space": "url('/images/bg.jpg')",
-				"moon": "url('/images/bg2.jpg')"
+				"moon": "url('/images/bg2.jpg')",
+				"background": "url('/images/background2.png')",
 			}
 		},
 	},
