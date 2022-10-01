@@ -35,6 +35,7 @@ function Home() {
 				</Suspense>
 			</Canvas>
 			<img src="/images/spaceman.svg" alt="spaceman" className=" w-32 absolute bottom-8 right-4" />
+			<img src="/images/bubble.svg" alt="bubble" className=" w-96 absolute bottom-8 right-16 bounce " />
 		</div>
 	)
 }
