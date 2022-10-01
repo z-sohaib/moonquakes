@@ -22,4 +22,13 @@
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-  
+
+@font-face {
+  font-family: "Ailerons";
+  src: local("Ailerons"),
+   url("./assets/fonts/Ailerons-Typeface.otf") format("truetype");
+  font-weight: bold;
+  }
+  .font-aileron {
+    font-family: "Ailerons";
+  }
