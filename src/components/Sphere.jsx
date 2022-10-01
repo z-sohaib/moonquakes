@@ -8,22 +8,16 @@ function Sphere() {
 
 	const { nodes } = useLoader(GLTFLoader, "/models/moon.glb")
 
-	useFrame(() => (planet.current.rotation.y += 0.0002))
+	useFrame(() => (planet.current.rotation.y += 0.002))
 
 	return (
-		<>
-			<mesh
-				ref={planet}
-				visible
-				position={[0, 0, 0]}
-				geometry={nodes.Cube008.geometry}
-				material={nodes.Cube008.material}
-			/>
-			<mesh position={[0, 0, 0]}>
-				<sphereGeometry args={[1]} />
-				<meshStandardMaterial color={"orange"} />
-			</mesh>
-		</>
+		<mesh
+			ref={planet}
+			visible
+			position={[0, 0, 0]}
+			geometry={nodes.Cube008.geometry}
+			material={nodes.Cube008.material}
+		/>
 	)
 }
 
