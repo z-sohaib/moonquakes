@@ -3,7 +3,7 @@ function About() {
 		<div className=" h-screen left-0 bg-background bg-cover">
 			
 			<div className="text-white flex flex-col">
-				<p className="text-[42px] absolute left-[200px] top-[100px] font-semibold ">Learn about Apollo Missions</p>
+				<p className="text-[42px] mt-32 font-semibold ">Learn about Apollo Missions</p>
 			</div>
 
 			<a href="https://moon.nasa.gov/resources/13/apollo-11-seismic-experiment/#:~:text=The%20Passive%20Seismic%20Experiment%20was,Aldrin%20with%20the%20seismic%20experiment." target={"_blank"} rel="noreferrer">

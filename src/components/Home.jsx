@@ -3,7 +3,6 @@ import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
 import CameraControls from "./CameraControls"
 import Sphere from "./Sphere"
-import Test from "./Test"
 // import SkyBox from "./SkyBox"
 
 function Home() {
@@ -18,15 +17,14 @@ function Home() {
 				</div>
 			</div>
 			<Canvas className="canvas">
-				
 				<CameraControls />
 				<directionalLight intensity={1} />
 				<ambientLight intensity={0.6} />
 				<Suspense fallback="loading">
-					<Sphere />
+					<group>
+						<Sphere />
+					</group>
 				</Suspense>
-				<pointLight position={[15, 15, 15]} />
-				<Test />
 			</Canvas>
 			<img src="/images/spaceman.svg" alt="spaceman" className="absolute bottom-8 right-4" />
 		</div>
