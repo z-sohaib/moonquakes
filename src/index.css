@@ -41,8 +41,6 @@
     body {
       height: 100vh;
       overflow: hidden;
-      opacity: 0.5;
-      background-color: black;
       display: -webkit-box;
       display: flex;
     }
