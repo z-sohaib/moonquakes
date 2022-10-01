@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
 import { useRef, useState } from "react"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
