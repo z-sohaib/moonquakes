@@ -3,11 +3,13 @@ import Typewriter from "typewriter-effect"
 import { useNavigate } from "react-router-dom"
 
 function Welcome() {
-	const navigate = useNavigate();
-	useEffect(()=>{const myTimeout = setTimeout(switchpage, 6000);})
+	const navigate = useNavigate()
+	useEffect(()=> {
+		const myTimeout = setTimeout(switchpage, 6000)
+	}
+	)
 	const switchpage = ()=>{
-		console.log("hhelll")
-		  navigate("/home");
+		navigate("/home")
 	}
 
 	

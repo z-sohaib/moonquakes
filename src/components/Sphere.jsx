@@ -19,6 +19,7 @@ function Sphere() {
 			z: 120,
 			type: "Deep Moonquake",
 			color: "red",
+			shadow: "shadow-red-600",
 			date: "04-01-1971 ",
 		},
 		{
@@ -28,6 +29,7 @@ function Sphere() {
 			z: 120,
 			type: "Vibration",
 			color: "green",
+			shadow: "shadow-green-600",
 			date: "26-10-1971 ",
 		},
 		
@@ -38,6 +40,7 @@ function Sphere() {
 			z: 420,
 			type: "Thermal Quake",
 			color: "blue",
+			shadow: "shadow-blue-600",
 			date: "03-03-1972 ",
 		},
 		{
@@ -47,6 +50,7 @@ function Sphere() {
 			z: -120,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "06-05-1972",
 		},
 		{
@@ -56,6 +60,7 @@ function Sphere() {
 			z: 320,
 			type: "Deep Moonquake",
 			color: "red",
+			shadow: "shadow-red-600",
 			date: "16-09-1973",
 		},
 		{
@@ -65,6 +70,7 @@ function Sphere() {
 			z: 50,
 			type: "Vibration",
 			color: "green",
+			shadow: "shadow-green-600",
 			date: "02-03-1973",
 		},
 		{
@@ -74,6 +80,7 @@ function Sphere() {
 			z: 120,
 			type: "Vibration",
 			color: "green",
+			shadow: "shadow-green-600",
 			date: "16-11-1976",
 		},
 		{
@@ -83,6 +90,7 @@ function Sphere() {
 			z: 50,
 			type: "Deep Moonquake",
 			color: "red",
+			shadow: "shadow-red-600",
 			date: "25-12-1983",
 		},
 		{
@@ -92,6 +100,7 @@ function Sphere() {
 			z: -130,
 			type: "Deep Moonquake",
 			color: "red",
+			shadow: "shadow-red-600",
 			date: "06-03-1985",
 		},
 		{
@@ -101,6 +110,7 @@ function Sphere() {
 			z: -150,
 			type: "Thermal Quake",
 			color: "blue",
+			shadow: "shadow-blue-600",
 			date: "30-09-1985",
 		},
 		{
@@ -110,6 +120,7 @@ function Sphere() {
 			z: -90,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "06-12-2003",
 		},
 		{
@@ -119,6 +130,7 @@ function Sphere() {
 			z: -80,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "12-06-2004",
 		},
 		{
@@ -128,6 +140,7 @@ function Sphere() {
 			z: 420,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "19-09-2004",
 		},
 		{
@@ -137,6 +150,7 @@ function Sphere() {
 			z: -190,
 			type: "Thermal Quake",
 			color: "blue",
+			shadow: "shadow-blue-600",
 			date: "17-08-2004",
 		},
 		{
@@ -146,6 +160,7 @@ function Sphere() {
 			z: -260,
 			type: "Deep Quake",
 			color: "red",
+			shadow: "shadow-red-600",
 			date: "12-11-2004",
 		},
 		{
@@ -155,6 +170,7 @@ function Sphere() {
 			z: -90,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "08-06-2005",
 		},
 		{
@@ -164,6 +180,7 @@ function Sphere() {
 			z: -200,
 			type: "Thermal Quake",
 			color: "blue",
+			shadow: "shadow-blue-600",
 			date: "10-06-2005",
 		},
 		{
@@ -173,6 +190,7 @@ function Sphere() {
 			z: -200,
 			type: "Shallow Quake",
 			color: "yellow",
+			shadow: "shadow-yellow-600",
 			date: "11-11-2006",
 		},
 
@@ -192,11 +210,11 @@ function Sphere() {
 				{seisms.map((seism) => (
 					<>
 						<Html as="div" position={[seism.x + 10, seism.y, seism.z + 10]}>
-							<div className="glass px-4 py-2 text-[12px] text-white w-36 text-center">
-								{seism.type}
+							<div className={`glass px-4 py-2 text-[12px] text-white font-semibold w-36 text-center cursor-pointer hover:backdrop-brightness-75 hover:backdrop-blur-xl ${seism.shadow} shadow-sm`} onClick={() => {console.log("clicked"); navigate("/home/details")}}>
+								{seism.type}<br />{seism.date}
 							</div>
 						</Html>
-						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
+						<mesh key={seism.id} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
 							<sphereBufferGeometry args={[20, 20, 20]} />
 							<meshStandardMaterial color={seism.color} />
 						</mesh>
