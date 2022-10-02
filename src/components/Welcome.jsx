@@ -11,7 +11,7 @@ function Welcome() {
 				}}
 			/>
 			</p>
-			<img src="/images/logo.svg" alt="spaceman" className="absolute bottom-8 right-4" />
+			<img src="/images/logo.svg" alt="spaceman" className="absolute bottom-0 right-0" />
 		</div>
 	)
 }

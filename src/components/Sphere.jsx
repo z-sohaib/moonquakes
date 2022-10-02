@@ -82,7 +82,7 @@ function Sphere() {
 								{seism.type}
 							</div>
 						</Html>
-						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
+						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.6}>
 							<sphereBufferGeometry args={[20, 20, 20]} />
 							<meshStandardMaterial color={seism.color} />
 						</mesh>
