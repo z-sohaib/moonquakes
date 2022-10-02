@@ -18,7 +18,7 @@ function Home() {
 					}}
 				/>
 				</p>
-				<p className="text-[22px] ">Did you knew that also moon can have quakes on its surface?  🤔  Get to discover that now !!</p>
+				<p className="text-[22px] ">Did you know that also moon can have quakes on its surface?  🤔  Get to discover that now !!</p>
 				<div className="glass flex justify-center items-center self-center py-3 px-6 gap-x-4">
 					<p className="text-[20px] font-semibold">Rotate The Moon</p>
 					<img className = " w-16 bounce "src="/images/main.svg " alt="main" />

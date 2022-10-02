@@ -45,6 +45,22 @@ function Sphere() {
 			type: "Shallow Quake",
 			color: "yellow"
 		},
+		{
+			id: 5,
+			x: 344,
+			y: 160,
+			z: 320,
+			type: "Deep Moonquake",
+			color: "red"
+		},
+		{
+			id: 6,
+			x: 290,
+			y: 400,
+			z: 50,
+			type: "Vibration",
+			color: "green"
+		},
 		
 	])
 	useFrame(() => {
