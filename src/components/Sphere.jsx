@@ -28,6 +28,7 @@ function Sphere() {
 			type: "Vibration",
 			color: "green"
 		},
+		
 		{
 			id: 3,
 			x: 0,
@@ -44,6 +45,7 @@ function Sphere() {
 			type: "Shallow Quake",
 			color: "yellow"
 		},
+		
 	])
 	useFrame(() => {
 		planet.current.rotation.y += 0.002
@@ -64,7 +66,7 @@ function Sphere() {
 								{seism.type}
 							</div>
 						</Html>
-						<mesh key={seism.id} onPointerOver={() => {console.log("pointer over")}} onClick={() => {console.log("clicked"); navigate("/home/info")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
+						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
 							<sphereBufferGeometry args={[20, 20, 20]} />
 							<meshStandardMaterial color={seism.color} />
 						</mesh>

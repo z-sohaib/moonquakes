@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound"
 import Welcome from "./components/Welcome"
 import Layout from "./layout/Layout"
 import Info from "./components/Info"
+import Details from "./components/Details"
 
 function App() {
 	return (
@@ -14,7 +15,8 @@ function App() {
 			<Route path="/home" element={<Layout />}>
 				<Route index element={<Home />} />
 				<Route path="about" element={<About />} />
-				<Route path="/home/play" element={<Play />} />
+				<Route path="play" element={<Play />} />
+				<Route path="details" element={<Details />} />
 				<Route path="info" element={<Info />} />
 			</Route>
 			<Route path="*" element={<NotFound />} />
