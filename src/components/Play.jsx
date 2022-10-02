@@ -97,13 +97,13 @@ export default function Play() {
             
             <form onSubmit={handleSubmit} className="mx-auto mt-8 flex justify-center">
                 <input  
-                    className="glass border-black border-2 px-4 py-2 mr-2 text-white"
+                    className="glass border-black border-2 px-12 py-3 mr-2 text-white"
                     type="text"
-                    placeholder='Enter your answer'
+                    placeholder='Make your guess here !'
                     value={answer}
                     onChange={(e) => setAnswer(e.target.value)}
                 />
-                <input className="glass border-black border-2 px-4 py-2  text-white" type="submit" />
+                <input className="glass border-black border-2 px-6 py-3  text-white" type="submit" value="Submit" />
             </form>
         </div>
     )

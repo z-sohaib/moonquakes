@@ -18,7 +18,8 @@ function Sphere() {
 			y: 0,
 			z: 120,
 			type: "Deep Moonquake",
-			color: "red"
+			color: "red",
+			date: "04-01-1971 ",
 		},
 		{
 			id: 2,
@@ -26,7 +27,8 @@ function Sphere() {
 			y: 480,
 			z: 120,
 			type: "Vibration",
-			color: "green"
+			color: "green",
+			date: "26-10-1971 ",
 		},
 		
 		{
@@ -35,7 +37,8 @@ function Sphere() {
 			y: 270,
 			z: 420,
 			type: "Thermal Quake",
-			color: "blue"
+			color: "blue",
+			date: "03-03-1972 ",
 		},
 		{
 			id: 4,
@@ -43,7 +46,8 @@ function Sphere() {
 			y: 160,
 			z: -120,
 			type: "Shallow Quake",
-			color: "yellow"
+			color: "yellow",
+			date: "06-05-1972",
 		},
 		{
 			id: 5,
@@ -51,7 +55,8 @@ function Sphere() {
 			y: 160,
 			z: 320,
 			type: "Deep Moonquake",
-			color: "red"
+			color: "red",
+			date: "16-09-1973",
 		},
 		{
 			id: 6,
@@ -59,9 +64,118 @@ function Sphere() {
 			y: 400,
 			z: 50,
 			type: "Vibration",
-			color: "green"
+			color: "green",
+			date: "02-03-1973",
 		},
-		
+		{
+			id: 7,
+			x: 290,
+			y: 400,
+			z: 120,
+			type: "Vibration",
+			color: "green",
+			date: "16-11-1976",
+		},
+		{
+			id: 8,
+			x: 290,
+			y: 400,
+			z: 50,
+			type: "Deep Moonquake",
+			color: "red",
+			date: "25-12-1983",
+		},
+		{
+			id: 9,
+			x: 290,
+			y: 400,
+			z: -130,
+			type: "Deep Moonquake",
+			color: "red",
+			date: "06-03-1985",
+		},
+		{
+			id: 10,
+			x: 180,
+			y: 450,
+			z: -150,
+			type: "Thermal Quake",
+			color: "blue",
+			date: "30-09-1985",
+		},
+		{
+			id: 11,
+			x: 200,
+			y: 450,
+			z: -90,
+			type: "Shallow Quake",
+			color: "yellow",
+			date: "06-12-2003",
+		},
+		{
+			id: 12,
+			x: 60,
+			y: -500,
+			z: -80,
+			type: "Shallow Quake",
+			color: "yellow",
+			date: "12-06-2004",
+		},
+		{
+			id: 13,
+			x: 0,
+			y: 20,
+			z: 420,
+			type: "Shallow Quake",
+			color: "yellow",
+			date: "19-09-2004",
+		},
+		{
+			id: 14,
+			x: 20,
+			y: -470,
+			z: -190,
+			type: "Thermal Quake",
+			color: "blue",
+			date: "17-08-2004",
+		},
+		{
+			id: 15,
+			x: 80,
+			y: -440,
+			z: -260,
+			type: "Deep Quake",
+			color: "red",
+			date: "12-11-2004",
+		},
+		{
+			id: 16,
+			x: 220,
+			y: 400,
+			z: -90,
+			type: "Shallow Quake",
+			color: "yellow",
+			date: "08-06-2005",
+		},
+		{
+			id: 17,
+			x: 300,
+			y: -350,
+			z: -200,
+			type: "Thermal Quake",
+			color: "blue",
+			date: "10-06-2005",
+		},
+		{
+			id: 18,
+			x: 410,
+			y: -30,
+			z: -200,
+			type: "Shallow Quake",
+			color: "yellow",
+			date: "11-11-2006",
+		},
+
 	])
 	useFrame(() => {
 		planet.current.rotation.y += 0.002
@@ -82,7 +196,7 @@ function Sphere() {
 								{seism.type}
 							</div>
 						</Html>
-						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.6}>
+						<mesh key={seism.id}  onClick={() => {console.log("clicked"); navigate("/home/details")}} visible position={[seism.x, seism.y, seism.z]} scale={0.5}>
 							<sphereBufferGeometry args={[20, 20, 20]} />
 							<meshStandardMaterial color={seism.color} />
 						</mesh>
@@ -102,5 +216,4 @@ function Sphere() {
 		</>
 	)
 }
-
 export default Sphere
