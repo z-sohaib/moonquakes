@@ -11,7 +11,7 @@ module.exports = {
 				"space": "url('/images/bg.png')",
 				"moon": "url('/images/bg2.jpg')",
 				"mn": "url('/images/bg-moon.png')",
-				"background": "url('/images/background2.png')",
+				"background": "url('/images/background.png')",
 			}
 		},
 	},

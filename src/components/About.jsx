@@ -47,6 +47,7 @@ function About() {
 					<p className="text-[18px] absolute left-[1200px] top-[280px] text-center">Apollo 16 Seismic  <br /> Experiment <br /> 1972</p>
 				</div>
 			</a>
+			<img src="/images/orbit.svg" alt="orbit" className=" w-96 absolute bottom-0 right-0 bounce" />
 		</div>
 	)
 }
