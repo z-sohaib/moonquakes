@@ -1,8 +1,6 @@
-import { stringify } from 'postcss';
-import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
-import 'reactjs-popup/dist/index.css';
-import { randInt } from 'three/src/math/MathUtils';
+import { useState } from "react"
+import "reactjs-popup/dist/index.css"
+import { randInt } from "three/src/math/MathUtils"
 
 const data = [
 	{
@@ -68,7 +66,7 @@ export default function Play() {
 		const answerArray = answer.split(" ")
 
 		for (let i = 0; i < answerArray.length; i++) {
-			answerArray[i] = answerArray[i].toLowerCase();
+			answerArray[i] = answerArray[i].toLowerCase()
 		}
 
 		let found = 0
@@ -90,14 +88,14 @@ export default function Play() {
 	}
 
 	return (
-		<div className=" h-screen left-0 bg-bg bg-cover">
-			<div className="text-white flex flex-col">
-				<p className="text-[42px] absolute left-[200px] top-[60px] font-semibold ">Play around the moon !</p>
-				<p className="text-[25px] absolute left-[200px] top-[125px] ">Try to guess the AI-generated picture, you have limited tempts 🤓</p>
+		<div className="h-screen bg-bg bg-cover">
+			<div className="text-white mt-32">
+				<p className="text-[42px] font-semibold">Play around the moon !</p>
+				<p className="text-[25px] mt-4">Try to guess the AI-generated picture, you have limited tempts 🤓</p>
 			</div>
-			<img className="absolute left-[520px] top-[200px] w-[400px] h-[400px] rounded-[20px] border-2 border-white-500 " src={"/images/game/figure" + pictureSelected + ".png"} alt="image" />
+			<img className="mt-8 mx-auto w-[400px] h-[400px] rounded-[20px] border-2 border-white-500 " src={"/images/game/figure" + pictureSelected + ".png"} alt="image" />
 			
-			<form onSubmit={handleSubmit} className="absolute left-[575px] top-[650px]">
+			<form onSubmit={handleSubmit} className="mx-auto mt-8 flex justify-center">
 				<input  
 					className="glass border-black border-2 px-4 py-2 mr-2 text-white"
 					type="text"
