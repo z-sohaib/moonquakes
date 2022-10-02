@@ -91,7 +91,7 @@ export default function Play() {
         <div className="h-screen bg-bg bg-cover">
             <div className="text-white mt-32">
                 <p className="text-[42px] font-semibold">Play around the moon !</p>
-                <p className="text-[25px] mt-4">Try to guess the AI-generated picture, you have limited tempts 🤓</p>
+                <p className="text-[25px] mt-4">Try to guess thse AI-generated picture, you have limited tempts 🤓</p>
             </div>
             <img className="mt-8 mx-auto w-[400px] h-[400px] rounded-[20px] border-2 border-white-500 " src={"/images/game/figure" + pictureSelected + ".png"} alt="image" />
             
